@@ -4,11 +4,7 @@ import google.generativeai as genai
 from fastapi import FastAPI, UploadFile
 import base64
 from gtts import gTTS
-from dotenv import load_dotenv
 
-load_dotenv()
-# Now you can access it like a normal environment variable
-API_KEY = os.getenv("API_KEY")
 app = FastAPI()
 
 class AudioFileManager:
